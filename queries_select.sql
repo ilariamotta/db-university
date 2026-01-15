@@ -28,7 +28,7 @@ AND  `hour` >= "14:00:00";
 
 
 6. Selezionare tutti i corsi di laurea magistrale (38 risultati). 
-SELECT  COUNT(*) FROM `degrees`
+SELECT  * FROM `degrees`
 WHERE `level` = "magistrale";
 
 
@@ -38,5 +38,5 @@ SELECT COUNT(*) AS `departments` FROM `departments`
 
 
 8. Indicare quanti insegnanti non hanno un numero di telefono (50). 
-SELECT * FROM `teachers`
+SELECT COUNT(*) FROM `teachers`
 WHERE `phone` IS NULL;
